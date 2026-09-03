@@ -21,7 +21,7 @@ public class PlayerControler : MonoBehaviour
     private CharacterController characterController;
 
     private bool canMove = true;
-    private bool isRunning = false;
+    public bool isRunning = false;
 
 
     void Start()
@@ -36,7 +36,7 @@ public class PlayerControler : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
-         if (Input.GetKeyDown(KeyCode.LeftShift))
+         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             isRunning = !isRunning;
         }
