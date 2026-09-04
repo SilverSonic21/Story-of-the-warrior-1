@@ -15,6 +15,7 @@ public class PlayerControler : MonoBehaviour
     public float defaultHeight = 2f;
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
+    public float Health = 100f;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -47,7 +48,7 @@ public class PlayerControler : MonoBehaviour
         float curSpeedX = 0f;
         float curSpeedY = 0f;
 
-        // ⭐ Individual WASD key checks
+        
         if (Input.GetKey(KeyCode.S)) curSpeedX = speed;
         if (Input.GetKey(KeyCode.W)) curSpeedX = -speed;
         if (Input.GetKey(KeyCode.A)) curSpeedY = speed;
@@ -57,7 +58,7 @@ public class PlayerControler : MonoBehaviour
 
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        // Jump
+        
         if (Input.GetKey(KeyCode.LeftShift) && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
@@ -67,13 +68,13 @@ public class PlayerControler : MonoBehaviour
             moveDirection.y = movementDirectionY;
         }
 
-        // Gravity
+       
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        // Crouch
+        
         if (Input.GetButton("Jump") && canMove)
         {
             characterController.height = crouchHeight;
@@ -87,16 +88,16 @@ public class PlayerControler : MonoBehaviour
             runSpeed = 12f;
         }
 
-        // Apply movement
+        
         characterController.Move(moveDirection * Time.deltaTime);
 
-        // Mouse look
+        
         if (canMove)
         {
-            rotationX -= -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX -= Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, -Input.GetAxis("Mouse X") * lookSpeed, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
 }
