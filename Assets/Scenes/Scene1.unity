@@ -1647,8 +1647,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0034988578, y: 0.013606018, z: 0.0065141832}
-  m_Center: {x: 0.008767772, y: 0.00015533403, z: 0.0046839984}
+  m_Size: {x: 0.0033094012, y: 0.013606018, z: 0.0065141832}
+  m_Center: {x: 0.00886251, y: 0.00015533404, z: 0.0046839984}
 --- !u!65 &1733021535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1668,8 +1668,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.021034336, y: 0.002896294, z: 0.009223035}
-  m_Center: {x: 3.151415e-14, y: 0.008491502, z: 0.0046110484}
+  m_Size: {x: 0.021034336, y: 0.003296026, z: 0.009223035}
+  m_Center: {x: 3.3243343e-14, y: 0.008291633, z: 0.0046110484}
 --- !u!65 &1733021536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1689,8 +1689,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0029349064, y: 0.019568695, z: 0.009368948}
-  m_Center: {x: -0.009049765, y: 0.00015533404, z: 0.004683998}
+  m_Size: {x: 0.0033108238, y: 0.019568695, z: 0.009368948}
+  m_Center: {x: -0.008861806, y: 0.00015533403, z: 0.004683998}
 --- !u!65 &1733021537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1710,8 +1710,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.009063412, y: 0.003352859, z: 0.009368948}
-  m_Center: {x: -0.005985542, y: -0.007952574, z: 0.004683998}
+  m_Size: {x: 0.009408441, y: 0.0035094689, z: 0.009368948}
+  m_Center: {x: -0.0058130305, y: -0.007874262, z: 0.004683998}
 --- !u!65 &1733021538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1731,8 +1731,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.009336631, y: 0.002976108, z: 0.009366929}
-  m_Center: {x: 0.0058488604, y: -0.008140923, z: 0.004685007}
+  m_Size: {x: 0.009565596, y: 0.003498658, z: 0.009366929}
+  m_Center: {x: 0.005734388, y: -0.007879657, z: 0.004685007}
 --- !u!65 &1733021539
 BoxCollider:
   m_ObjectHideFlags: 0
