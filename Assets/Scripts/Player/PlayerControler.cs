@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControler : MonoBehaviour
@@ -100,4 +101,20 @@ public class PlayerControler : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
+
+    public void TakeDamage(float amount)
+    {
+        Health -= amount;
+        Debug.Log("Player took damage. Current health: " + Health);
+
+        if (Health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Debug.Log("Player has died.");
+    }
+
 }

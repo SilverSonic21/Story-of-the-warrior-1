@@ -6,14 +6,12 @@ public class Sword : MonoBehaviour
 {
 
     public Animator swordSwing;
-    public Sword sword;
+    
     public float damage = 6f;
     public float attackSpeed = 2f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
+    public SwordHitbox hitbox;
+
 void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -25,7 +23,9 @@ void Update()
     IEnumerator SwingSword()
     {
         swordSwing.SetBool("Sword", true);
+        hitbox.EnableHitbox();
         yield return new WaitForSeconds(1f / attackSpeed);
+        hitbox.DisableHitbox();
         swordSwing.SetBool("Sword", false);
     }
   
