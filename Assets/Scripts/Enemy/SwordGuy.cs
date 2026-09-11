@@ -25,14 +25,15 @@ public class SwordGuy : MonoBehaviour
         }
         Destroy(gameObject);
     }
-    
-  private void OnControllerColliderHit(ControllerColliderHit hit)
+        
+    private void OnTriggerEnter(Collider other)
     {
-        PlayerControler player = hit.collider.GetComponent<PlayerControler>();
+        PlayerControler player = other.GetComponent<PlayerControler>();
 
         if (player != null)
         {
             player.TakeDamage(damageToPlayer);
+            Debug.Log("Enemy damaged the player!");
         }
     }
 }

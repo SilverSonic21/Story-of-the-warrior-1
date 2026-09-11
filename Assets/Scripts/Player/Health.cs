@@ -1,19 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
-  
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+ public PlayerControler player;
+    public TMP_Text healthText;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (player != null)
+        {
+            healthText.text = "Health: " + player.Health.ToString("0");
+        }
     }
 }

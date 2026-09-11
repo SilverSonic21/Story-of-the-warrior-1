@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 public class Spawner : MonoBehaviour
 {
-[System.Serializable]
+      public float spawnRadius = 10f;
+     public Transform spawnCenter;
+    [System.Serializable]
     public class SpawnableEnemy
     {
         public string name;
@@ -12,6 +14,7 @@ public class Spawner : MonoBehaviour
         public float interval = 1f;
         public int pointValue;
         public float minDistance = 5f;
+         
     }
 
     [System.Serializable]
@@ -115,7 +118,7 @@ public class Spawner : MonoBehaviour
 
         if (allWavesSpawned && enemiesAlive <= 0)
         {
-            WinGame();
+            //WinGame();
         }
     }
 
@@ -131,17 +134,18 @@ public class Spawner : MonoBehaviour
 
     Vector3 GetRandomSpawnPosition()
     {
-        if (!spawnPointA || !spawnPointB)
-        {
-            Debug.LogWarning("Spawn points A and B must be assigned!");
-            return Vector3.zero;
-        }
-        return new Vector3
-        (
-        Random.Range(spawnPointA.position.x, spawnPointB.position.x),
-        Random.Range(spawnPointA.position.y, spawnPointB.position.y),
-        Random.Range(spawnPointA.position.z, spawnPointB.position.z)
-        );
+       if (!spawnCenter)
+    {
+        Debug.LogWarning("Spawn center must be assigned!");
+        return Vector3.zero;
+    }
+
+    Vector3 randomOffset = Random.insideUnitSphere * spawnRadius;
+
+    // Keep enemies on ground (optional)
+    randomOffset.y = 0f;
+
+    return spawnCenter.position + randomOffset;
         
     }
 

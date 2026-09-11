@@ -21,7 +21,7 @@ public class PlayerControler : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
-    private Rigidbody rb;
+    //private Rigidbody rb;
     private bool canMove = true;
     public bool isRunning = false;
 
@@ -31,7 +31,7 @@ public class PlayerControler : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -110,7 +110,7 @@ public class PlayerControler : MonoBehaviour
 
         if (Health <= 0)
         {
-            rb.freezeRotation = false;
+            //rb.freezeRotation = false;
             Die();
             
         }
