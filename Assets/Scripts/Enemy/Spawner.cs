@@ -26,9 +26,9 @@ public class Spawner : MonoBehaviour
 
     public List<Wave> waves = new List<Wave>();
 
-    [Header("Random Spawn Area")]
-    public Transform spawnPointA;
-    public Transform spawnPointB;
+    //[Header("Random Spawn Area")]
+    //public Transform spawnPointA;
+    //public Transform spawnPointB;
 
     public float timeBetweenWaves = 5f;
 

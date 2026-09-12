@@ -25,6 +25,10 @@ public class PlayerControler : MonoBehaviour
     private bool canMove = true;
     public bool isRunning = false;
 
+    public UnityEngine.UI.Image damageFlash;
+    public float flashSpeed = 2f;
+    private float flashAlpha = 0f;
+    public DeathScreen deathScreen;
 
     void Start()
     {
@@ -101,12 +105,18 @@ public class PlayerControler : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, -Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+        if (damageFlash != null)
+        {
+            flashAlpha = Mathf.Lerp(flashAlpha, 0f, Time.deltaTime * flashSpeed);
+            damageFlash.color = new Color(1, 0, 0, flashAlpha);
+        }
     }
 
     public void TakeDamage(float amount)
     {
         Health -= amount;
         Debug.Log("Player took damage. Current health: " + Health);
+        flashAlpha = 1f;
 
         if (Health <= 0)
         {
@@ -118,6 +128,13 @@ public class PlayerControler : MonoBehaviour
     void Die()
     {
         Debug.Log("Player has died.");
+        canMove = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        DeathScreen screen = FindObjectOfType<DeathScreen>();
+        if (screen != null)
+            screen.ShowDeathScreen();
+        Time.timeScale = 0f;
     }
 
 }
