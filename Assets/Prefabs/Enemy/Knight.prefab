@@ -255,7 +255,7 @@ MonoBehaviour:
   damage: 6
   maxHealth: 20
   currentHealth: 0
-  damageToPlayer: 10
+  damageToPlayer: 5
 --- !u!54 &925714811393702276
 Rigidbody:
   m_ObjectHideFlags: 0
