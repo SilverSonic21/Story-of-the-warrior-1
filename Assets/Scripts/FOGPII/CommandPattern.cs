@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
+
 
 #if UNITY_EDITOR
 using UnityEditor.SceneManagement;
@@ -40,6 +42,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         Undo();
+        if (Input.GetKeyDown(KeyCode.P))
+            ScoreManager.instance.AddScore(5.0f);
         
     }
 
