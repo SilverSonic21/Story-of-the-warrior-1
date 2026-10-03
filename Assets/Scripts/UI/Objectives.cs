@@ -7,6 +7,8 @@ public class Objectives : MonoBehaviour
 {
 
     public Text ObjectiveParent;
+    public Text ObjectiveChildText1;
+    public Text ObjectiveChildText2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
