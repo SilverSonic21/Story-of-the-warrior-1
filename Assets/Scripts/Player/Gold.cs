@@ -1,13 +1,7 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
 
-public class Objectives : MonoBehaviour
+public class Gold : MonoBehaviour
 {
-
-    public Text ObjectiveParent;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
