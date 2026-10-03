@@ -2669,7 +2669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -109}
+  m_AnchoredPosition: {x: 0, y: -83.1}
   m_SizeDelta: {x: 315.8636, y: 54.089294}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &664263210
@@ -2692,7 +2692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '* Child OBJ:'
+  m_text: Appoach the gate
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2719,8 +2719,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3292,7 +3292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 139.80545
+      value: 139.97574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3300,35 +3300,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.727386
+      value: -59.348633
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.49653843
+      value: 0.4940538
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.49421966
+      value: -0.49836412
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5024368
+      value: 0.5048801
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5067088
+      value: 0.5026333
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.607
+      value: -89.606
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.981
+      value: -162.099
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -467.034
+      value: -467.036
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ca9c8cb780c8cc94a8ee73d6a08cb75f, type: 3}
       propertyPath: m_Name
@@ -3764,7 +3764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Objective: '
+  m_text: The Gate
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3791,8 +3791,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6403,7 +6403,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225263711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 267.9}
+  m_LocalPosition: {x: 0, y: 0, z: 272.8}
   m_LocalScale: {x: 0.18061, y: 0.18061, z: 0.18061}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6413,7 +6413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113.91, y: -204}
+  m_AnchoredPosition: {x: 113.91, y: -209.8}
   m_SizeDelta: {x: 195.8936, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225263713
@@ -7410,8 +7410,23 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0106141735
-  m_Center: {x: -0.0006954776, y: 0.0003300922, z: -0.000014162507}
+  m_Radius: 0.016556978
+  m_Center: {x: -0.00096602907, y: 0.0003300922, z: -0.000014161819}
+--- !u!114 &1492884727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492884722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617396162d3cbe949a4ec71bcba68278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyFound
+  ObjectiveParent: {fileID: 885463617}
+  ObjectiveChildText1: {fileID: 664263210}
+  ObjectiveChildText2: {fileID: 0}
 --- !u!1001 &1494154231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9198,8 +9213,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 4.6543975, z: 0.99999976}
+  m_Center: {x: 0, y: 1.8271987, z: 0}
 --- !u!23 &1960824039
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10054,6 +10069,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 605701430d998484cb41c34ace0055d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1492884723}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 605701430d998484cb41c34ace0055d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1492884727}
   m_SourcePrefab: {fileID: 100100000, guid: 605701430d998484cb41c34ace0055d0, type: 3}
 --- !u!1 &2120697327
 GameObject:
@@ -10088,7 +10106,7 @@ MonoBehaviour:
   totalEnemies: 20
   enemiesKilled: 0
   objectiveUI: {fileID: 1115804163}
-  spawnRadius: 50
+  spawnRadius: 30
   spawnCheckRadius: 1
   blockedLayers:
     serializedVersion: 2
@@ -10186,7 +10204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 505.1
+      value: 571.4
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10194,7 +10212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 411.2
+      value: 573.3
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalRotation.w
