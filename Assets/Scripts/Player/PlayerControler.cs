@@ -100,10 +100,10 @@ public class PlayerControler : MonoBehaviour
         
         if (canMove)
         {
-            rotationX -= -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX -= Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, -Input.GetAxis("Mouse X") * lookSpeed, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
         if (damageFlash != null)
         {
@@ -115,7 +115,7 @@ public class PlayerControler : MonoBehaviour
     public void TakeDamage(float amount)
     {
         Health -= amount;
-        Debug.Log("Player took damage. Current health: " + Health);
+        //Debug.Log("Player took damage. Current health: " + Health);
         flashAlpha = 1f;
 
         if (Health <= 0)
@@ -127,13 +127,15 @@ public class PlayerControler : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Player has died.");
+        //Debug.Log("Player has died.");
         canMove = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        DeathScreen screen = FindObjectOfType<DeathScreen>();
+
+        DeathScreen screen = FindAnyObjectByType<DeathScreen>();
         if (screen != null)
             screen.ShowDeathScreen();
+
         Time.timeScale = 0f;
     }
 

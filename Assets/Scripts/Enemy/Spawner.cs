@@ -3,8 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 public class Spawner : MonoBehaviour
 {
-      public float spawnRadius = 10f;
-     public Transform spawnCenter;
+    public int totalEnemies = 20;
+    public int enemiesKilled = 0;
+
+    public DefeatEnemy objectiveUI;
+
+     public float spawnRadius = 10f;
+    public float spawnCheckRadius = 1f;
+    public LayerMask blockedLayers;
+
+    public Transform spawnCenter;
     [System.Serializable]
     public class SpawnableEnemy
     {
@@ -91,16 +99,32 @@ public class Spawner : MonoBehaviour
         }
     }
 
+
+    
+    bool IsSpawnClear(Vector3 position)
+    {
+        return !Physics.CheckSphere(position, spawnCheckRadius, blockedLayers);
+    }
+
+    
+
     void SpawnEnemy(SpawnableEnemy enemyData)
     {
         Vector3 spawnPos = GetRandomSpawnPosition();
-
         int attempts = 0;
 
-        while (Vector3.Distance(player.position, spawnPos) < enemyData.minDistance && attempts < 20)
+    
+        while ((!IsSpawnClear(spawnPos) || Vector3.Distance(player.position, spawnPos) < enemyData.minDistance)
+               && attempts < 20)
         {
             spawnPos = GetRandomSpawnPosition();
             attempts++;
+        }
+
+        if (!IsSpawnClear(spawnPos))
+        {
+            Debug.LogWarning("Could not find a clear spawn position for " + enemyData.name);
+            return;
         }
 
         GameObject spawnedEnemy = Instantiate(enemyData.enemyPrefab, spawnPos, Quaternion.identity);
@@ -110,16 +134,26 @@ public class Spawner : MonoBehaviour
         DeathTracker tracker = spawnedEnemy.AddComponent<DeathTracker>();
         tracker.spawner = this;
     }
+   
 
     public void EnemyDied()
     {
         enemiesAlive--;
-        Debug.Log("Enemies alive: " + enemiesAlive);
+        //Debug.Log("Enemies alive: " + enemiesAlive);
 
         if (allWavesSpawned && enemiesAlive <= 0)
         {
             //WinGame();
         }
+        enemiesKilled++;
+
+        if (objectiveUI != null)
+        {
+            
+          objectiveUI.UpdateCounter(enemiesKilled, totalEnemies);
+            
+        }
+        
     }
 
     void WinGame()
@@ -142,7 +176,6 @@ public class Spawner : MonoBehaviour
 
     Vector3 randomOffset = Random.insideUnitSphere * spawnRadius;
 
-    // Keep enemies on ground (optional)
     randomOffset.y = 0f;
 
     return spawnCenter.position + randomOffset;

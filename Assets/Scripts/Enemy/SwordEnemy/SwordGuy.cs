@@ -17,15 +17,26 @@ public class SwordGuy : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        Debug.Log("The Enemy has taken damage.");
-         DeathTracker tracker = GetComponent<DeathTracker>();
-        if (tracker != null)
+        //Debug.Log("Enemy took damage. Current health: " + currentHealth);
+
+        if (currentHealth <= 0)
         {
-            tracker.spawner.EnemyDied();
+            DeathTracker tracker = GetComponent<DeathTracker>();
+
+            if (tracker != null && tracker.spawner != null)
+            {
+                tracker.spawner.EnemyDied();
+            }
+            else
+            {
+                //Debug.LogWarning("DeathTracker or spawner missing — enemy will still die.");
+            }
+
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
-        
+
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerControler player = other.GetComponent<PlayerControler>();
@@ -33,7 +44,7 @@ public class SwordGuy : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(damageToPlayer);
-            Debug.Log("Enemy damaged the player!");
+            //Debug.Log("Enemy damaged the player!");
         }
     }
 }
