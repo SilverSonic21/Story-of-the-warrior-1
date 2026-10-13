@@ -43,7 +43,8 @@ public class DefeatEnemy : MonoBehaviour
 
         if (killed >= total)
         {
-            ObjectiveChildText1.text = "Good Job";
+            ObjectiveParent.text = "Find a way into the castle";
+            ObjectiveChildText1.text = "Find the Key";
         }
     }
 }
