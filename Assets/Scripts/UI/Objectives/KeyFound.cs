@@ -7,9 +7,9 @@ public class KeyFound : MonoBehaviour
     public TMP_Text ObjectiveChildText1;
     //public TMP_Text ObjectiveChildText2;
   
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider player)
     {
-        if (other.CompareTag("Player"))
+        if (player.CompareTag("Player"))
         {
             PlayerInventory.hasKey = true;
             ObjectiveParent.text = "Key Found";

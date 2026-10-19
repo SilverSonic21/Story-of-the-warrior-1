@@ -13,7 +13,7 @@ public class WallDamage : MonoBehaviour
 
         if (wallHealthSlider != null)
         {
-            wallHealthSlider.maxValue = 1f;   // normalized slider
+            wallHealthSlider.maxValue = 1f;   
             wallHealthSlider.value = 1f;
         }
     }
