@@ -22,19 +22,25 @@ public class SwordHitbox : MonoBehaviour
     {
         if (!canHit) return;
 
-        
+    
         WallDamage wall = other.GetComponent<WallDamage>();
+
+        
+        if (wall == null)
+            wall = other.GetComponentInParent<WallDamage>();
+
         if (wall != null)
         {
             wall.TakeDamage(damage);
+            Debug.Log("Wall hit!");
             return;
         }
 
-        
         SwordGuy enemy = other.GetComponent<SwordGuy>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            Debug.Log("Enemy hit!");
             return;
         }
     }

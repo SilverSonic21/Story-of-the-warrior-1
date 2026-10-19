@@ -2,65 +2,39 @@ using UnityEngine;
 
 public class CannonBall : MonoBehaviour
 {
-       public float damage = 5;
-    public float speed = 5f;
-    public float life = 1f;
-    public GameObject particles;
-    public GameObject particles2;
-    private bool hasHit = false;
-    private Rigidbody2D rb;
-    public float rotationSpeed = 500f;
-    public AudioSource audioSource;
-    public AudioClip breakSound;
+public float damage = 10;
+    public float speed = 20f;
+    public float life = 3f;
 
+    //private bool hasHit = false;
+    private Rigidbody rb;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }   
+        rb = GetComponent<Rigidbody>();
+    }
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, life);
     }
-    
-    private void Update()
-    {
-       // transform.position += Vector3.right * direction * speed * Time.deltaTime;
-        
-    }
 
-    public void SetDirection(Vector2 dir)
+    public void SetDirection(Vector3 dir)
     {
-    
-        rb.linearVelocity = dir * speed;    
+        rb.linearVelocity = dir * speed;
     }
-
-    void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (hasHit) return;
-        if (collision.gameObject.CompareTag("Player"))
+        PlayerControler player = other.GetComponent<PlayerControler>();
+
+        if (player != null)
         {
-            
-
-            PlayerControler playerControler = collision.gameObject.GetComponent<PlayerControler>();
-            if (playerControler != null)
-            {
-                hasHit = true;
-                playerControler.TakeDamage(damage);
-                Destroy(gameObject);
-            }
-
-        
-            //GameObject p1 = Instantiate(particles, transform.position, Quaternion.identity);
-            //GameObject p2 = Instantiate(particles2, transform.position, Quaternion.identity);
-
-            //p1.GetComponent<ParticleSystem>().Play();
-            //p2.GetComponent<ParticleSystem>().Play();
-        
-            
-        } 
-        //Debug.Log("Hit");
-        
+            player.TakeDamage(damage);
+            //Debug.Log("Enemy damaged the player!");
+            Destroy(gameObject);
+        }
     }
+
+
 }
+

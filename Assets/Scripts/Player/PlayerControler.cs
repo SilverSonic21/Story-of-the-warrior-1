@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using System;
+using TMPro;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControler : MonoBehaviour
@@ -17,11 +18,12 @@ public class PlayerControler : MonoBehaviour
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
     public float Health = 100f;
+    public TMP_Text healthText;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
-    private Rigidbody rb;
+   
     private bool canMove = true;
     public bool isRunning = false;
 
@@ -35,7 +37,7 @@ public class PlayerControler : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        rb = GetComponent<Rigidbody>();
+        UpdateHealthUI();
     }
 
     void Update()
@@ -111,20 +113,39 @@ public class PlayerControler : MonoBehaviour
             damageFlash.color = new Color(1, 0, 0, flashAlpha);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Player trigger hit: " + other.name);
+        CannonBall ball = other.GetComponent<CannonBall>();
+        if (ball != null)
+        {
+            Debug.Log("CannonBall detected! Damage: " + ball.damage);
+            TakeDamage(ball.damage);
+            Destroy(ball.gameObject);
+        }
+    }
 
     public void TakeDamage(float amount)
     {
         Health -= amount;
-        //Debug.Log("Player took damage. Current health: " + Health);
+        Debug.Log("Player took damage. Current health: " + Health);
         flashAlpha = 1f;
+
+        UpdateHealthUI();
 
         if (Health <= 0)
         {
-            rb.freezeRotation = false;
+           
             Die();
             
         }
     }
+    void UpdateHealthUI()
+    {
+        if (healthText != null)
+            healthText.text = "Health: " + Health.ToString("0");
+    }
+
     void Die()
     {
         //Debug.Log("Player has died.");
