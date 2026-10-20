@@ -18,7 +18,7 @@ public class UIButton : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadSceneAsync("Play1");
+        SceneManager.LoadSceneAsync("CastleGate");
         Time.timeScale = 1f;
     }
 

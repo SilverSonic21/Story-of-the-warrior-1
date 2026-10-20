@@ -6,15 +6,14 @@ public class Sword : MonoBehaviour
 {
 
     public Animator swordSwing;
-    
-    public float damage = 6f;
+
     public float attackSpeed = 2f;
     
     public SwordHitbox hitbox;
 
 void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             StartCoroutine(SwingSword());
         }
