@@ -6,8 +6,14 @@ public class DefeatEnemy : MonoBehaviour
     public TMP_Text ObjectiveParent;
     public TMP_Text ObjectiveChildText1;
     public TMP_Text ObjectiveChildText2;
+    public GameObject key;
 
     private bool objectiveActive = false;
+
+    void Start()
+    {
+        key.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -45,6 +51,7 @@ public class DefeatEnemy : MonoBehaviour
         {
             ObjectiveParent.text = "Find a way into the castle";
             ObjectiveChildText1.text = "Find the Key";
+            key.SetActive(true);
         }
     }
 }
