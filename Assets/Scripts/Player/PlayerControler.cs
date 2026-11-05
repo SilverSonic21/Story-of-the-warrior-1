@@ -115,7 +115,7 @@ public class PlayerControler : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player trigger hit: " + other.name);
+        //Debug.Log("Player trigger hit: " + other.name);
         CannonBall ball = other.GetComponent<CannonBall>();
         if (ball != null)
         {

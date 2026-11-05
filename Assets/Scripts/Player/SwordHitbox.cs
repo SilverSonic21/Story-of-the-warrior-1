@@ -40,7 +40,14 @@ public class SwordHitbox : MonoBehaviour
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
-            Debug.Log("Enemy hit!");
+            //Debug.Log("Enemy hit!");
+            return;
+        }
+        King king = other.GetComponentInParent<King>();
+        if (king != null)
+        {
+            king.TakeDamage(damage);
+            Debug.Log("King hit!");
             return;
         }
     }
