@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class PreviousScene : MonoBehaviour
 {
-     private int nextSceneToLoad;
+   private int nextSceneToLoad;
     private void Start()
     {
-        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex - 1;
     }
 
     // Update is called once per frame
@@ -14,4 +14,5 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(nextSceneToLoad);
     }
+
 }
