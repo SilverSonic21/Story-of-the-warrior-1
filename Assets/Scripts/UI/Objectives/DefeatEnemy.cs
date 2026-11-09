@@ -7,6 +7,7 @@ public class DefeatEnemy : MonoBehaviour
     public TMP_Text ObjectiveChildText1;
     public TMP_Text ObjectiveChildText2;
     public GameObject key;
+  
 
     private bool objectiveActive = false;
 
@@ -39,9 +40,11 @@ public class DefeatEnemy : MonoBehaviour
 
     public void UpdateCounter(int killed, int total)
     {
+        Debug.Log("UpdateCounter called");
+
         if (!objectiveActive)
         {
-           // Debug.Log("Objective is NOT active — ignoring update.");
+            Debug.Log("Objective not active!");
             return;
         }
 

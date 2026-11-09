@@ -7,8 +7,9 @@ public class Spawner : MonoBehaviour
     public int enemiesKilled = 0;
 
     public DefeatEnemy objectiveUI;
+    public DefeatEnemy2 objectiveUI2;
 
-     public float spawnRadius = 10f;
+    public float spawnRadius = 10f;
     public float spawnCheckRadius = 1f;
     public LayerMask blockedLayers;
 
@@ -152,6 +153,13 @@ public class Spawner : MonoBehaviour
         {
             
           objectiveUI.UpdateCounter(enemiesKilled, totalEnemies);
+            
+        }
+        
+        if (objectiveUI2 != null)
+        {
+            
+          objectiveUI2.UpdateCounter(enemiesKilled, totalEnemies);
             
         }
         

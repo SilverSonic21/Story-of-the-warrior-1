@@ -462,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -2220,7 +2220,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -2463,7 +2463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6963a6511f7c7459e7e7210b3ea9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  nextSceneName: Castle
 --- !u!1001 &489800534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4449,7 +4448,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -6304,7 +6303,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -7613,7 +7612,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -7798,7 +7797,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -8690,7 +8689,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -10527,7 +10526,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -12001,7 +12000,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -13459,6 +13458,7 @@ MonoBehaviour:
   totalEnemies: 20
   enemiesKilled: 0
   objectiveUI: {fileID: 1115804163}
+  objectiveUI2: {fileID: 0}
   spawnRadius: 200
   spawnCheckRadius: 1
   blockedLayers:
@@ -14044,7 +14044,7 @@ PrefabInstance:
     - target: {fileID: 3189534006547412286, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: spawner
       value: 
-      objectReference: {fileID: 2120697328}
+      objectReference: {fileID: 0}
     - target: {fileID: 4168776235339557161, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
