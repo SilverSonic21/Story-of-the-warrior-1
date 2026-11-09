@@ -8,12 +8,14 @@ public class King : MonoBehaviour
     public float damageToPlayer = 10f;
     public GameObject gate;
     public GameObject gate2;
+    public GameObject winScreen;
 
     void Start()
     {
         currentHealth = maxHealth;
         gate2.SetActive(false);
         gate.SetActive(true);
+        winScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,20 +30,8 @@ public class King : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            DeathTracker tracker = GetComponent<DeathTracker>();
+           Die();
 
-            if (tracker != null && tracker.spawner != null)
-            {
-                tracker.spawner.EnemyDied();
-            }
-            else
-            {
-                //Debug.LogWarning("DeathTracker or spawner missing — enemy will still die.");
-            }
-
-            Destroy(gameObject);
-            gate2.SetActive(true);
-            gate.SetActive(false);
         }
     }
 
@@ -54,5 +44,27 @@ public class King : MonoBehaviour
             player.TakeDamage(damageToPlayer);
             //Debug.Log("Enemy damaged the player!");
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
+        //gate2.SetActive(true);
+        //gate.SetActive(false);
+        winScreen.SetActive(true);
+        WinGame();
+
+    }
+
+    void WinGame()
+    {
+        Debug.Log("YOU WIN!");
+
+        if (winScreen != null){
+            winScreen.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        Time.timeScale = 0f;
     }
 }

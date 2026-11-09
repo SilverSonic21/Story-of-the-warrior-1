@@ -3,26 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] private string nextSceneName = "Castle";
-
-    private bool loading = false;
-
-    private void OnTriggerEnter(Collider other)
+     private int nextSceneToLoad;
+    private void Start()
     {
-        if (other.CompareTag("Player") && !loading)
-        {
-            loading = true;
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+    }
 
-            Scene scene = SceneManager.GetSceneByName(nextSceneName);
-
-            if (!scene.isLoaded)
-            {
-                SceneManager.LoadScene(nextSceneName, LoadSceneMode.Additive);
-            }
-
-            SceneManager.SetActiveScene(
-                SceneManager.GetSceneByName(nextSceneName)
-            );
-        }
+    // Update is called once per frame
+    private void OnTriggerEnter(Collider player)
+    {
+        SceneManager.LoadScene(nextSceneToLoad);
     }
 }

@@ -21,16 +21,6 @@ public class SwordGuy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            DeathTracker tracker = GetComponent<DeathTracker>();
-
-            if (tracker != null && tracker.spawner != null)
-            {
-                tracker.spawner.EnemyDied();
-            }
-            else
-            {
-                //Debug.LogWarning("DeathTracker or spawner missing — enemy will still die.");
-            }
 
             Destroy(gameObject);
         }

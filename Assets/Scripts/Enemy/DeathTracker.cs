@@ -6,7 +6,6 @@ public class DeathTracker : MonoBehaviour
 
     void OnDestroy()
     {
-        DeathTracker tracker = GetComponent<DeathTracker>();
         if (spawner != null)
         {
             spawner.EnemyDied();
