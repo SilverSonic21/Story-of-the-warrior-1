@@ -1,11 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class King : MonoBehaviour
 {
+    [Header("Health")]
+    public float maxHealth = 60;
+    private float currentHealth;
+    public Slider kingHealthSlider;
+
+    [Header("Damage")]
     public float damage = 6f;
-    public float maxHealth = 20;
-    public float currentHealth;
     public float damageToPlayer = 10f;
+
+    [Header("GameObjects")]
     public GameObject gate;
     public GameObject gate2;
     public GameObject winScreen;
@@ -13,6 +20,12 @@ public class King : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        if (kingHealthSlider != null)
+        {
+            kingHealthSlider.maxValue = 1f;   
+            kingHealthSlider.value = 1f;
+        }
+        
         gate2.SetActive(false);
         gate.SetActive(true);
         winScreen.SetActive(false);
@@ -27,6 +40,11 @@ public class King : MonoBehaviour
     {
         currentHealth -= amount;
         Debug.Log("Enemy took damage. Current health: " + currentHealth);
+
+        if (kingHealthSlider != null)
+        {
+            kingHealthSlider.value = currentHealth / maxHealth;
+        }
 
         if (currentHealth <= 0)
         {
