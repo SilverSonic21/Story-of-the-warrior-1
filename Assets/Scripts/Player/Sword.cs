@@ -11,21 +11,31 @@ public class Sword : MonoBehaviour
     
     public SwordHitbox hitbox;
 
-void Update()
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip swingNoise;
+    
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            StartCoroutine(SwingSword());
-        }
+       
     }
 
-    IEnumerator SwingSword()
-    {
-        swordSwing.SetBool("Sword", true);
-        hitbox.EnableHitbox();
-        yield return new WaitForSeconds(1f / attackSpeed);
-        hitbox.DisableHitbox();
-        swordSwing.SetBool("Sword", false);
-    }
-  
+    void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                StartCoroutine(SwingSword());
+            }
+        }
+
+        IEnumerator SwingSword()
+        { 
+            audioSource.PlayOneShot(swingNoise);
+            swordSwing.SetBool("Sword", true);
+            hitbox.EnableHitbox();
+            yield return new WaitForSeconds(1f / attackSpeed);
+            hitbox.DisableHitbox();
+            swordSwing.SetBool("Sword", false);
+        }
+    
 }

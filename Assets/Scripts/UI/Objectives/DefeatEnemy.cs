@@ -7,6 +7,10 @@ public class DefeatEnemy : MonoBehaviour
     public TMP_Text ObjectiveChildText1;
     public TMP_Text ObjectiveChildText2;
     public GameObject key;
+
+    [Header ("Sound")]
+    public AudioSource audioSource;
+    public AudioClip keyAppear;
   
 
     private bool objectiveActive = false;
@@ -14,6 +18,7 @@ public class DefeatEnemy : MonoBehaviour
     void Start()
     {
         key.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,6 +60,8 @@ public class DefeatEnemy : MonoBehaviour
             ObjectiveParent.text = "Find a way into the castle";
             ObjectiveChildText1.text = "Find the Key";
             key.SetActive(true);
+            audioSource.PlayOneShot(keyAppear);
+
         }
     }
 }

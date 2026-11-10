@@ -7,17 +7,13 @@ public class Spawn : MonoBehaviour
     public int totalEnemies = 20;
     private int enemiesKilled = 0;
 
-    [Header("Boss")]
-    public GameObject king;
 
     [Header("UI")]
     public DefeatEnemy2 objectiveUI2;
 
     private void Start()
     {
-        if (king != null)
-            king.SetActive(false);
-
+       
         if (objectiveUI2 != null)
         {
             objectiveUI2.UpdateCounter(0, totalEnemies);
@@ -51,9 +47,6 @@ public class Spawn : MonoBehaviour
             objectiveUI2.ObjectiveChildText1.text = "Defeat the King!";
         }
 
-        if (king != null)
-        {
-            king.SetActive(true);
-        }
+      
     }
 }
