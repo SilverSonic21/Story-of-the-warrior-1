@@ -173,6 +173,8 @@ MonoBehaviour:
   crouchSpeed: 3
   Health: 100
   healthText: {fileID: 0}
+  audioSource: {fileID: 6456047127210509974}
+  death: {fileID: 8300000, guid: 9009a0847868e224fb761886cb82cd61, type: 3}
   isRunning: 0
   damageFlash: {fileID: 0}
   flashSpeed: 2

@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -704,6 +708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -761,6 +769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -849,6 +861,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1049,6 +1065,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1322,6 +1342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1453,6 +1477,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2391,6 +2419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2453,6 +2485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2753,6 +2789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3352,6 +3392,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4258,6 +4302,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4390,6 +4438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5036,6 +5088,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8442,6 +8498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8499,6 +8559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9904,6 +9968,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10064,6 +10132,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10121,6 +10193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10178,6 +10254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10552,6 +10632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10734,6 +10818,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12113,6 +12201,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12815,6 +12907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13721,6 +13817,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13778,6 +13878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14047,6 +14151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14144,6 +14252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14817,6 +14929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15441,6 +15557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3225278691440545489}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15676,15 +15796,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 504.6
+      value: 505
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.9
+      value: 44.8
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 181.9
+      value: 170.3
       objectReference: {fileID: 0}
     - target: {fileID: 2162122503746367016, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15735,6 +15855,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
+--- !u!82 &3225278691440545489 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6456047127210509974, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
+  m_PrefabInstance: {fileID: 3225278691440545488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3774680085037858258
 PrefabInstance:
   m_ObjectHideFlags: 0

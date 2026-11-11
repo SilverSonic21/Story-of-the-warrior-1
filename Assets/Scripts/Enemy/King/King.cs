@@ -8,6 +8,10 @@ public class King : MonoBehaviour
     private float currentHealth;
     public Slider kingHealthSlider;
 
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip ebit;
+
     [Header("Damage")]
     public float damage = 6f;
     public float damageToPlayer = 10f;
@@ -69,6 +73,7 @@ public class King : MonoBehaviour
         Destroy(gameObject);
         //gate2.SetActive(true);
         //gate.SetActive(false);
+        audioSource.PlayOneShot(ebit);
         winScreen.SetActive(true);
         WinGame();
 

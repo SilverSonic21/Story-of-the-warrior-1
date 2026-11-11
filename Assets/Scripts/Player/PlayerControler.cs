@@ -7,6 +7,7 @@ using TMPro;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControler : MonoBehaviour
 {
+    [Header("Player Controller")]
     public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
@@ -17,9 +18,16 @@ public class PlayerControler : MonoBehaviour
     public float defaultHeight = 2f;
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
+
+    [Header("Health")]
     public float Health = 100f;
     public TMP_Text healthText;
 
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip death;
+
+    [Header("Character Movement")]
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -31,6 +39,8 @@ public class PlayerControler : MonoBehaviour
     public float flashSpeed = 2f;
     private float flashAlpha = 0f;
     public DeathScreen deathScreen;
+
+   
 
     void Start()
     {
@@ -155,7 +165,8 @@ public class PlayerControler : MonoBehaviour
 
         DeathScreen screen = FindAnyObjectByType<DeathScreen>();
         if (screen != null)
-            screen.ShowDeathScreen();
+        screen.ShowDeathScreen();
+        audioSource.PlayOneShot(death);
 
         Time.timeScale = 0f;
     }

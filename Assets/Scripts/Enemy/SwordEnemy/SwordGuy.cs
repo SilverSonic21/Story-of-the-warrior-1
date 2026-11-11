@@ -7,12 +7,16 @@ public class SwordGuy : MonoBehaviour
     public float maxHealth = 20;
     public float currentHealth;
     public float damageToPlayer = 10f;
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip sdeath;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxHealth;
     }
+
 
     public void TakeDamage(float amount)
     {
@@ -21,7 +25,7 @@ public class SwordGuy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-
+            audioSource.PlayOneShot(sdeath);
             Destroy(gameObject);
         }
     }

@@ -382,10 +382,6 @@ PrefabInstance:
       value: Knight (2)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.32
       objectReference: {fileID: 0}
@@ -429,6 +425,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -488,10 +488,6 @@ PrefabInstance:
       value: Knight (4)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.623
       objectReference: {fileID: 0}
@@ -535,6 +531,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -886,13 +886,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154617042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.0052314345, y: 0.000010926273, z: -0.004624688, w: 0.9999757}
   m_LocalPosition: {x: 105.16, y: 0.9412, z: 50.7831}
   m_LocalScale: {x: 6.8888445, y: 2.9176538, z: 8.467027}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.599, y: 0.004, z: -0.53}
 --- !u!65 &154617045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1398,14 +1398,6 @@ PrefabInstance:
       value: Knight (6)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43532103
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.307
       objectReference: {fileID: 0}
@@ -1449,6 +1441,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1470,14 +1466,6 @@ PrefabInstance:
     - target: {fileID: 560127612381185550, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_Name
       value: Knight (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43532103
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5407993
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1523,6 +1511,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1860,14 +1852,6 @@ PrefabInstance:
       value: Knight (9)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43532103
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.375
       objectReference: {fileID: 0}
@@ -1911,6 +1895,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2186,7 +2174,7 @@ MonoBehaviour:
   enemiesKilled: 0
   objectiveUI: {fileID: 0}
   objectiveUI2: {fileID: 154617048}
-  spawnRadius: 25
+  spawnRadius: 35
   spawnCheckRadius: 1
   blockedLayers:
     serializedVersion: 2
@@ -2197,7 +2185,7 @@ MonoBehaviour:
     enemiesInWave:
     - name: 
       enemyPrefab: {fileID: 830350636}
-      count: 10
+      count: 15
       interval: 2
       pointValue: 0
       minDistance: 0
@@ -4582,10 +4570,6 @@ PrefabInstance:
       value: Knight (1)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.623
       objectReference: {fileID: 0}
@@ -4629,6 +4613,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4764,10 +4752,6 @@ PrefabInstance:
       value: Knight (5)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.32
       objectReference: {fileID: 0}
@@ -4811,6 +4795,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4934,10 +4922,6 @@ PrefabInstance:
       value: Knight
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.927
       objectReference: {fileID: 0}
@@ -4981,6 +4965,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5764,14 +5752,6 @@ PrefabInstance:
       value: Knight (7)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43532103
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 74.338
       objectReference: {fileID: 0}
@@ -5815,6 +5795,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6676,6 +6660,10 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 1435356592}
+    - target: {fileID: 1158828809078706042, guid: eef1a11138345ce45b00ad983a7dbe0a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     - target: {fileID: 4162093635192384579, guid: eef1a11138345ce45b00ad983a7dbe0a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7752,10 +7740,6 @@ PrefabInstance:
       value: Knight (3)
       objectReference: {fileID: 0}
     - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5407993
-      objectReference: {fileID: 0}
-    - target: {fileID: 904706428729433268, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.927
       objectReference: {fileID: 0}
@@ -7799,6 +7783,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 392019844}
+    - target: {fileID: 6674198553985217922, guid: fbc6f5bf7878ab94494678da7eca8281, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2144647993}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8603,6 +8591,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 067b5f6fd2e0cca48a0c01d030140d00, type: 3}
+--- !u!82 &2144647993 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6456047127210509974, guid: ce9fbb5a2e6737a42bd92e1005bcd9bb, type: 3}
+  m_PrefabInstance: {fileID: 1907342999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
