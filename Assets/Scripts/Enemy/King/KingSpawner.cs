@@ -26,11 +26,11 @@ public class Spawn : MonoBehaviour
 
         Debug.Log($"Enemies Killed: {enemiesKilled}/{totalEnemies}");
 
-        if (objectiveUI2 != null)
+        /*if (objectiveUI2 != null)
         {
             objectiveUI2.UpdateCounter(enemiesKilled, totalEnemies);
         }
-
+        */
         if (enemiesKilled >= totalEnemies)
         {
             SpawnKing();
